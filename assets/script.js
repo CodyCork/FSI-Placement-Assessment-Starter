@@ -24,42 +24,46 @@ let totalCookieQuantityTd = document.querySelector('#qty-total');
 const gbPlusBtn = document.querySelector('#add-gb');
 gbPlusBtn.addEventListener('click', function addGb() {
     gb = gb + 1;
-    gbQuantityTd.textContent = gb
-    totalCookieQuantityTd.textContent = totalCookieQuantity + gb;
+    gbQuantityTd.textContent = gb;
+    totalCookieQuantity = totalCookieQuantity + 1;
+    totalCookieQuantityTd.textContent = totalCookieQuantity
 })
-
 const gbMinusBtn = document.querySelector('#minus-gb');
 gbMinusBtn.addEventListener('click', function minusGb() {
     gb = gb - 1;
-    gbQuantityTd.textContent = gb
-    totalCookieQuantityTd.textContent = totalCookieQuantity - gb;
+    gbQuantityTd.textContent = gb;
+    totalCookieQuantity = totalCookieQuantity - 1;
+    totalCookieQuantityTd.textContent = totalCookieQuantity
 })
 
 //Add and Minus Choclate-Chip Cookies
 const ccPlusBtn = document.querySelector('#add-cc');
 ccPlusBtn.addEventListener('click', function addCc() {
     cc = cc + 1;
-    ccQuantityTd.textContent = cc
-    totalCookieQuantityTd.textContent = totalCookieQuantity + cc;
+    ccQuantityTd.textContent = cc;
+    totalCookieQuantity = totalCookieQuantity + 1;
+    totalCookieQuantityTd.textContent = totalCookieQuantity
 })
 const ccMinusBtn = document.querySelector('#minus-cc');
 ccMinusBtn.addEventListener('click', function minusCc() {
     cc = cc - 1;
-    ccQuantityTd.textContent = cc
-    totalCookieQuantityTd.textContent = totalCookieQuantity - cc;
+    ccQuantityTd.textContent = cc;  
+    totalCookieQuantity = totalCookieQuantity - 1; 
+    totalCookieQuantityTd.textContent = totalCookieQuantity
 })
 
 //Add and Minus Sugar-Cookies
 const sugarPlusBtn = document.querySelector('#add-sugar');
 sugarPlusBtn.addEventListener('click', function addSugar() {
     sugar = sugar + 1;
-    sugarQuantityTd.textContent = sugar
-    totalCookieQuantityTd.textContent = totalCookieQuantity + sugar;
-})
+    sugarQuantityTd.textContent = sugar;
+    totalCookieQuantity = totalCookieQuantity + 1;
+    totalCookieQuantityTd.textContent = totalCookieQuantity
+})    
 const sugarMinusBtn = document.querySelector('#minus-sugar');
 sugarMinusBtn.addEventListener('click', function minusSugar() {
     sugar = sugar - 1;
     sugarQuantityTd.textContent = sugar;
-    totalCookieQuantityTd.textContent = totalCookieQuantity - sugar;
+    totalCookieQuantity = totalCookieQuantity - 1;
+    totalCookieQuantityTd.textContent = totalCookieQuantity
 })
-
